@@ -1,4 +1,4 @@
-FROM openjdk:11
+FROM openjdk:8
 EXPOSE 8080
-ADD target/docker-spring-jenskins.jar docker-spring-jenskins.jar
-ENTRYPOINT ["java","-jar","/docker-spring-jenskins.jar"]
+ADD target/docker-jenkins-integration-sample.jar docker-jenkins-integration-sample.jar
+ENTRYPOINT ["java","-jar","/docker-jenkins-integration-sample.jar"]
